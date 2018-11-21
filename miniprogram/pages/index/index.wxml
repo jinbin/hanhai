@@ -1,0 +1,127 @@
+<!--pages/manage/manage.wxml-->
+<view wx:if="{{!hasUserInfo}}">
+
+  <view class="container">
+    <view class="userinfo">
+      <open-data class="userinfo-avatar" type="userAvatarUrl" background-size="cover"></open-data>
+      <open-data class="userinfo-nickname" type="userNickName"></open-data>
+    </view>
+    <button class="usermotto" open-type='getUserInfo' type="default" bindgetuserinfo="bindGetUserInfo">点击登录进入微店报销 </button>
+  </view>
+
+</view>
+
+<view wx:if="{{hasUserInfo}}">
+
+<form bindsubmit="postMessage" bindreset="formReset" report-submit="true"> 
+
+      <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+          <div class="weui-cell__bd">
+              <p class="weui-uploader__title">报销人数
+              <span style="color:red;">*</span>
+              </p>
+
+    <view class='form-group'>  
+        <input type="number" bindinput="bindNum" class="input-text" name="num" placeholder="请输入报销人数" />
+    </view>
+          </div>
+        </div> 
+      </div> 
+
+      <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+          <div class="weui-cell__bd">
+              <p class="weui-uploader__title">报销人员名单
+              <span style="color:red;">*</span>
+              </p>
+
+    <view class='form-group'>  
+        <input type="text" bindinput="bindNames" class="input-text" name="names" placeholder="请输入报销人员名单，务必以逗号分隔" />  
+    </view>
+          </div>
+        </div> 
+      </div> 
+
+      <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+          <div class="weui-cell__bd">
+              <p class="weui-uploader__title">报销金额
+              <span style="color:red;">*</span>
+              </p>
+
+    <view class='form-group'>  
+        <input type="digit" bindinput="bindMoney" class="input-text" name="money" placeholder="请输入报销金额" />  
+    </view>
+          </div>
+        </div> 
+      </div> 
+
+<div class="weui-cells weui-cells_form">
+
+        <div class="weui-cell">
+          <div class="weui-cell__bd">
+              <p class="weui-uploader__title">其他补充说明
+              <span style="color:red;">*</span>
+              </p>
+              
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" bindinput="bindDesInput" name="activityDesc" placeholder="请输入其他补充说明" style="height: 3.3em" />
+                </view>
+            </view>
+        </view>
+          </div>
+        </div> 
+</div>
+
+      <!-- <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+          <div class="weui-cell__bd">
+              <p class="weui-uploader__title">开始时间
+              </p>
+
+    <view class='form-group'>  
+        <input type="text" class="input-text" name="reporter" placeholder="请输入开始时间" />  
+    </view>
+          </div>
+        </div> 
+      </div> 
+
+            <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+          <div class="weui-cell__bd">
+              <p class="weui-uploader__title">结束时间
+              </p>
+
+    <view class='form-group'>  
+        <input type="text" class="input-text" name="reporter" placeholder="请输入结束时间" />  
+    </view>
+          </div>
+        </div> 
+      </div>  -->
+
+
+
+     <view class="section btn-area">  
+      <!-- <button class="hide{{show?'show':''}}" formType="submit" >提交</button>  -->
+      <button class="fixed_btn" type="primary" plain="true" formType="submit"  style="width: 80px">发送</button> 
+    </view> 
+
+</form>
+
+<view class="page__ft">
+  <navigator url="/pages/records/records">
+    <button>我的报销记录</button>
+  </navigator>
+  
+</view>
+
+<view class="page__ft" bindtap='toMiniProgram'>Powered by 
+  <p style="color:#00BFFF">可能性工作室</p>
+  <view class="weui-footer__text">Copyright © 2018-2018 jinbin</view>
+</view>
+
+</view>

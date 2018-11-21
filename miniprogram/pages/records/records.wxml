@@ -1,0 +1,10 @@
+<!--pages/records/records.wxml-->
+
+<block wx:for="{{records}}" wx:for-index="idx" wx:for-item="item" wx:key="Id">
+  <view>第{{idx + 1}}次提交：</view>
+  <view>提交人：{{item.names}}</view>
+  <view>报销金额：{{item.money}}</view>
+  <view>报销人数：{{item.num}}</view>
+  <view>提交时间：{{item.create_time}}</view>
+  <view>其他：{{item.desc}}</view>
+</block>
