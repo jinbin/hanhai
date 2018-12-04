@@ -15,7 +15,9 @@ Page({
   },
 
   onShow: function (e) {
-    var that = this 
+
+    var that = this
+
     wx.getSetting({
       success(res) {
         console.log("success")
@@ -140,20 +142,43 @@ Page({
       return
     }
 
-    // 获取用户信息
-    wx.getSetting({
+    console.log("output")
+    wx.cloud.callFunction({
+      name: 'output',
       success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              this.setData({
-                avatarUrl: res.userInfo.avatarUrl,
-                userInfo: res.userInfo
+        console.log(res.result.data)
+        var sum = 0
+        for (var index in res.result.data){
+          console.log(res.result.data[index].names + " " + res.result.data[index].money)
+          sum = sum + parseFloat(res.result.data[index].money)
+        }
+        
+        console.log("报销金额综合: " + sum)
+
+        // 获取用户信息
+        wx.getSetting({
+          success: res => {
+            if (res.authSetting['scope.userInfo']) {
+              // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+              wx.getUserInfo({
+                success: res => {
+                  this.setData({
+                    avatarUrl: res.userInfo.avatarUrl,
+                    userInfo: res.userInfo
+                  })
+                }
               })
             }
-          })
-        }
+          } 
+        })
+
+        wx.cloud.callFunction({
+          name: 'allCheck',
+          success: res => {
+            console.log(res)
+          }
+        })
+
       }
     })
   },
@@ -238,5 +263,11 @@ Page({
       }
     })
   },
+
+  onShareAppMessage: function(){
+    return {
+      title: '报销请点击进入登录后提交'
+    }
+  }
 
 })

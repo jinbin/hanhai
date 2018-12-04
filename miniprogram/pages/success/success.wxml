@@ -1,2 +1,5 @@
 <!--pages/success/success.wxml-->
-<text>恭喜你，提交成功！接着把发票交给对应接口人即可！</text>
+<view>
+恭喜你，提交成功！接着把发票交给对应接口人即可！及时添加微信 
+<p bindtap='copyText' data-text="674817248" style="color:blue">674817248(点击复制)</p>,否则可能无法收到报销款！
+</view>

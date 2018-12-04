@@ -37,7 +37,7 @@
               </p>
 
     <view class='form-group'>  
-        <input type="text" bindinput="bindNames" class="input-text" name="names" placeholder="请输入报销人员名单，务必以逗号分隔" />  
+        <input type="text" bindinput="bindNames" class="input-text" name="names" placeholder="请输入报销人员名单, 报销款打给第一个名字" />  
     </view>
           </div>
         </div> 
