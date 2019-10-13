@@ -1,0 +1,38 @@
+<!--pages/heros/heros.wxml-->
+<official-account></official-account>
+<view class="container1">
+  <image src="/images/heros.jpeg" mode="widthFix" style="width:95%; border-radius:25rpx;"></image>
+</view>
+
+<view class="container1">
+  <view class="window1" style="width:100%">
+
+    <view class="box1">
+      <navigator url="/pages/checkin/checkin?type=publicspeaking">
+        <image style="width:80rpx;height:80rpx;" src="/images/matrix_red.png"></image>
+        演讲
+      </navigator>
+    </view>
+
+    <view class="box1">
+      <navigator url="/pages/checkin/checkin?type=dtm">
+        <image style="width:80rpx;height:80rpx;" src="/images/matrix_purple.png"></image>
+        DTM
+      </navigator>
+    </view>
+
+    <view class="box1">
+      <navigator url="/pages/checkin/checkin?type=leadership">
+        <image style="width:80rpx;height:80rpx;" src="/images/matrix_DarkCyan.png"></image>
+        领导力
+      </navigator>
+    </view>
+
+    <view class="box1">
+      <navigator url="/pages/checkin/checkin?type=mot">
+        <image style="width:80rpx;height:80rpx;" src="/images/matrix_orange.png"></image>
+        MOT
+      </navigator>
+    </view>
+  </view>
+</view>

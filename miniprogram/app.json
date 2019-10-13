@@ -1,23 +1,45 @@
 {
   "pages": [
+    "pages/heros/heros",
+    "pages/checkin/checkin",
+    "pages/my/my",
     "pages/index/index",
     "pages/records/records",
     "pages/success/success",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/steps/steps"
   ],
+  "tabBar": {
+    "list": [
+        {
+          "pagePath": "pages/heros/heros",
+          "iconPath": "./images/tabBar/miniprogram.png",
+          "selectedIconPath": "images/tabBar/miniprogram-sel.png",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "iconPath": "images/tabBar/me-sel.png",
+          "selectedIconPath": "images/tabBar/me.png",
+          "text": "我的"
+        }
+    ]
+  },
+
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "微店云报销",
+    "navigationBarTitleText": "英雄之旅",
     "navigationBarTextStyle": "black"
   },
   "navigateToMiniProgramAppIdList": [
-    "wx09a49d05a365a4e6"
-  ]
+    "wx09a49d05a365a4e6",
+    "wx8abaf00ee8c3202e",
+    "wx4c4b54bc609bd79e",
+    "wx18a2ac992306a5a4",
+    "wxc1ee10069d40b79c",
+    "wx018f0c4c2a1ee727",
+    "wxde40c5cf1d10c3d1"
+  ],
+  "sitemapLocation": "sitemap.json"
 }

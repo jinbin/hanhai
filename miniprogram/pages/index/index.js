@@ -172,12 +172,13 @@ Page({
           } 
         })
 
-        wx.cloud.callFunction({
-          name: 'allCheck',
-          success: res => {
-            console.log(res)
-          }
-        })
+        //将所有isCheck true的置为false
+        // wx.cloud.callFunction({
+        //   name: 'allCheck',
+        //   success: res => {
+        //     console.log(res)
+        //   }
+        // })
 
       }
     })

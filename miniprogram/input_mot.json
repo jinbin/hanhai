@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "score": 10.0,
+      "task": "Visit one club that has fewer than 12 members.拜访一个会员少于12人的俱乐部。",
+      "id": "0"
+    },
+    {
+      "score": 10.0,
+      "task": "Visit one club that has more than 25 members.拜访一个会员超过25人的俱乐部。",
+      "id": "1"
+    },
+    {
+        "score": 10.0,
+        "task": "Bring at least one guest to a club meeting. 至少请一位来宾参加俱乐部会议。",
+        "id": "2"
+      },
+      {
+        "score": 10.0,
+        "task": "Bring a guest to join toastmasters membership. 邀请一个来宾入会。",
+        "id": "3"
+      }, 
+      {
+        "score": 10.0,
+        "task": "Introduce yourself to every guest that comes to your club and be interested in who they are.向每一位来到你的俱乐部的客人介绍你自己，并对他们是谁感兴趣。",
+        "id": "4"
+      },
+      {
+        "score": 10.0,
+        "task": "Shake hands with every guest in the meeting.与会议中的每个来宾握手。",
+        "id": "5"
+      }
+  ],
+  "type": "mot"
+}

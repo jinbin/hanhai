@@ -1,0 +1,40 @@
+<!--pages/tools/checklist/checklist.wxml-->
+
+<view class="box">
+  <!-- <picker bindchange="bindPickerChange" value="{{index1}}" range="{{array}}">
+    <view class="headline">
+      <text class="title">清单 for {{array[index1]}}</text>
+    </view>
+  </picker> -->
+
+  <!-- <checkbox-group class="small_box" bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{items[array[index1]]}}">
+      <checkbox value="{{item.name}}" color="green" checked="{{checklist[array[index1]][item.name]}}" id="{{item.name}}">
+        {{item.value}}
+      </checkbox>
+    </label>
+  </checkbox-group> -->
+
+  <!-- <checkbox-group style="width:90%" bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{tasks}}">
+      <checkbox value="{{item.id}}" color="green" checked="" id="{{item.id}}">
+        {{item.task}}
+      </checkbox>
+    </label>
+  </checkbox-group> -->
+
+  <view style="width:90%">
+    <view wx:if="{{checked[item.id]}}" class="checkbox_finished" wx:for="{{tasks}}">
+      {{item.task}}
+      <text style="color:blue;">【已完成】</text>
+    </view>
+    <view wx:if="!{{checked[item.id]}}" class="checkbox_unfinished" wx:for="{{tasks}}" bindtap="checkin">
+      {{item.task}}
+      {{userId}}
+    </view>    
+  </view>
+
+  <!-- <navigator open-type="switchTab" url='/pages/merger/merger' style="padding:30rpx">
+    <button size="mini" type="primary">返回首页</button>
+  </navigator> -->
+</view>

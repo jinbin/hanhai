@@ -10,7 +10,9 @@
 	},
 	"appid": "wx02f0dea7b1e25859",
 	"projectname": "hanhaibbs",
-	"libVersion": "2.2.5",
+	"libVersion": "2.8.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

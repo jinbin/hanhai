@@ -1,0 +1,71 @@
+{
+  "_id": "33ad46a4-31eb-445d-8cfc-9fd0fd7bc9af",
+  "tasks": [
+    {
+      "score": 10.0,
+      "task": "Take the meeting role of timer/grammarian/ah-counter, and get best award.担任时间官/语法官/哼哈官，并且获得最佳。",
+      "id": "0"
+    },
+    {
+      "score": 10.0,
+      "task": "Give two prepared speeches in one month. 一个月内做两次备稿演讲。",
+      "id": "1"
+    },
+    {
+        "score": 10.0,
+        "task": "Give two table-topic speeches in one month. 一个月内做两次桌面演讲。",
+        "id": "2"
+      },
+      {
+        "score": 10.0,
+        "task": "Step up to a meeting role or position you’ve never done before.尝试到一个你以前从未做过的角色或职位。",
+        "id": "3"
+      }, 
+      {
+        "score": 10.0,
+        "task": "Give a speech that’s longer than 10 minutes.做一个超过10分钟的演讲。",
+        "id": "4"
+      },
+      {
+        "score": 10.0,
+        "task": "Give a sharing speech that’s longer than 20 minutes.做一个超过20分钟的分享。",
+        "id": "5"
+      },
+      {
+        "score": 10.0,
+        "task": "Become a sharing master online.做一次线上分享。",
+        "id": "6"
+      },
+      {
+        "score": 10.0,
+        "task": "Create a 5-7min. “pocket speech” you can use anytime, anywhere.创造一个可以随时随地进行的5-7分钟袖珍演讲。",
+        "id": "7"
+      },   
+      {
+        "score": 10.0,
+        "task": "Attend a regular meeting based on hero’s journey theme. 参与一次英雄之旅主题会议。",
+        "id": "8"
+      },  
+      {
+        "score": 10.0,
+        "task": "Get best Table Topic award in a regular meeting based on hero’s journey theme. 在英雄之旅主题会议中获得最佳桌面演讲。",
+        "id": "9"
+      },  
+      {
+        "score": 10.0,
+        "task": "Attend a speech marathon. 参加一次演讲马拉松会议。",
+        "id": "10"
+      },  
+      {
+        "score": 10.0,
+        "task": "Become a contestant in a speech contest.参加演讲比赛。",
+        "id": "11"
+      },
+      {
+        "score": 10.0,
+        "task": "Attend one district level event.参加一个大区级别的活动。",
+        "id": "12"
+      }
+  ],
+  "type": "publicspeaking"
+}

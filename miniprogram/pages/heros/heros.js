@@ -1,9 +1,4 @@
-// pages/records/records.js
-
-const db = wx.cloud.database({
-  env: "jinbin-2af1f4"
-})
-
+// pages/heros/heros.js
 Page({
 
   /**
@@ -13,44 +8,11 @@ Page({
 
   },
 
-  onShow: function (e) {
-
-    console.log("Hello World")
-
-    wx.cloud.callFunction({
-      name: 'getOpenid',
-      complete: res => {
-        console.log(res)
-      }
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("onload")
 
-    var that = this
-
-    wx.cloud.callFunction({
-      name: 'getOpenId',
-      complete: res => {
-        that.setData({
-          openid: res.result.openid
-        })
-        db.collection("forms").where({
-          _openid: res.result.openid
-        }).get({
-          success: res => {
-            that.setData({
-              records: res.data
-            })
-            console.log(this.data.records)
-          }
-        })  
-      }
-    })
   },
 
   /**

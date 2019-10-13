@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "score": 10.0,
+      "task": "Run for club officer election/district officer election. 竞选俱乐部/大区官员。",
+      "id": "0"
+    },
+    {
+      "score": 10.0,
+      "task": "Become a club officer. 担任俱乐部官员。",
+      "id": "1"
+    },
+    {
+        "score": 10.0,
+        "task": "Become a district officer. 担任大区官员。",
+        "id": "2"
+      },
+      {
+        "score": 10.0,
+        "task": "Become a mentor of 3 members and uncover one way to enrich that experience.. 成为三名会员的导师并形成至少一种丰富导师经验的方法。",
+        "id": "3"
+      }, 
+      {
+        "score": 10.0,
+        "task": "Become a club sponsor. 成为一家俱乐部的sponsor。",
+        "id": "4"
+      },
+      {
+        "score": 10.0,
+        "task": "Become a club mentor. 成为一家俱乐部的mentor。",
+        "id": "5"
+      },
+      {
+        "score": 10.0,
+        "task": "Become a club coach. 成为一家俱乐部的coach。",
+        "id": "6"
+      },
+      {
+        "score": 10.0,
+        "task": "Complete one HPL project. 完成一个HPL项目。",
+        "id": "7"
+      },   
+      {
+        "score": 10.0,
+        "task": "Complete one path. 完成一条路径。",
+        "id": "8"
+      },  
+      {
+        "score": 10.0,
+        "task": "Plan out your path to achieve DTM (If you have one, do a 2nd！).规划实现DTM的路径（如果你已经有了，那就做第二个！）。",
+        "id": "9"
+      }
+  ],
+  "type": "DTM"
+}
