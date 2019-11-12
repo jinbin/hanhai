@@ -140,6 +140,13 @@ Page({
     })
   },
 
+  navigateTo: function (options) {
+    console.log(options)
+    wx.navigateTo({
+      url: options.currentTarget.id,
+    })
+  },
+
   toBilingualSpeak: function (e) {
     wx.navigateToMiniProgram({
       appId: 'wx4c4b54bc609bd79e'

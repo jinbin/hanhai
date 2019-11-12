@@ -1,40 +1,29 @@
 <!--pages/tools/checklist/checklist.wxml-->
 
 <view class="box">
-  <!-- <picker bindchange="bindPickerChange" value="{{index1}}" range="{{array}}">
-    <view class="headline">
-      <text class="title">清单 for {{array[index1]}}</text>
-    </view>
-  </picker> -->
-
-  <!-- <checkbox-group class="small_box" bindchange="checkboxChange">
-    <label class="checkbox" wx:for="{{items[array[index1]]}}">
-      <checkbox value="{{item.name}}" color="green" checked="{{checklist[array[index1]][item.name]}}" id="{{item.name}}">
-        {{item.value}}
-      </checkbox>
-    </label>
-  </checkbox-group> -->
-
-  <!-- <checkbox-group style="width:90%" bindchange="checkboxChange">
-    <label class="checkbox" wx:for="{{tasks}}">
-      <checkbox value="{{item.id}}" color="green" checked="" id="{{item.id}}">
-        {{item.task}}
-      </checkbox>
-    </label>
-  </checkbox-group> -->
 
   <view style="width:90%">
-    <view wx:if="{{checked[item.id]}}" class="checkbox_finished" wx:for="{{tasks}}">
-      {{item.task}}
-      <text style="color:blue;">【已完成】</text>
+    <view>
+      <view class="sub" wx:for="{{tasks}}">
+        <view style="width:80%;">
+          <view wx:if="{{!checked[item.id]}}" class="checkbox_unfinished">
+            {{item.task}}
+          </view>
+          <view wx:if="{{checked[item.id]}}" class="checkbox_finished">
+            {{item.task}}
+            <text style="color:blue;">✅</text>
+          </view>
+        </view>
+        <view style="width:20%">
+          <view wx:if="{{!checked[item.id]}}">
+            <button size="mini" bindtap="checkin" type="primary" data-id="{{item.id}}" data-desc="{{item.task}}">打卡Checkin</button>
+          </view>
+          <view wx:if="{{checked[item.id]}}">
+            <button size="mini" bindtap="uncheckin" type="warn" data-id="{{item.id}}">取消Cancel</button>
+          </view>
+        </view>
+      </view>
     </view>
-    <view wx:if="!{{checked[item.id]}}" class="checkbox_unfinished" wx:for="{{tasks}}" bindtap="checkin">
-      {{item.task}}
-      {{userId}}
-    </view>    
   </view>
 
-  <!-- <navigator open-type="switchTab" url='/pages/merger/merger' style="padding:30rpx">
-    <button size="mini" type="primary">返回首页</button>
-  </navigator> -->
 </view>

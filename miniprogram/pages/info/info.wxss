@@ -1,0 +1,8 @@
+/* pages/info/info.wxss */
+
+.section {
+  /* display: flex; */
+  /* direction: column; */
+  width: 90%;
+  padding-left: 20rpx;
+}

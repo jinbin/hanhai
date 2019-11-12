@@ -1,0 +1,34 @@
+<!--pages/info/info.wxml-->
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">大区</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+    </picker>
+
+    <view class="section__title">中区</view>
+    <picker bindchange="bindPickerDivision" value="{{index1}}" range="{{array1}}">
+      <view class="picker">
+        当前选择：{{array1[index1]}}
+      </view>
+    </picker>
+
+    <view class="section__title">俱乐部</view>
+    <picker bindchange="bindPickerClub" value="{{index2}}" range="{{array2}}">
+      <view class="picker">
+        当前选择：{{array2[index2]}}
+      </view>
+    </picker>
+
+    <view class="section__title">姓名</view>
+    <input name="name" placeholder="你的姓名" />
+  </view>
+
+  <button formType="submit">提交</button>
+  <button formType="reset">重置</button>
+
+</form>

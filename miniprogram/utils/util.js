@@ -2,11 +2,7 @@ const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+  return [year, month, day].map(formatNumber).join('')
 }
 
 const formatNumber = n => {
@@ -14,6 +10,18 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function giveTip(content) {
+  wx.showModal({
+    content: content,
+    showCancel: false,
+    confirmText: '确定',
+    confirmColor: '#ff7f50',
+    success: function (res) {
+    }
+  })
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  giveTip: giveTip
 }

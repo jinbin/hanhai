@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/heros/heros",
+    "pages/info/info",
     "pages/checkin/checkin",
     "pages/my/my",
     "pages/index/index",
@@ -29,15 +30,15 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "英雄之旅",
+    "navigationBarTitleText": "英雄之旅任务打卡",
     "navigationBarTextStyle": "black"
   },
   "navigateToMiniProgramAppIdList": [
+    "wx16c76d4762cbe0b3",
     "wx09a49d05a365a4e6",
     "wx8abaf00ee8c3202e",
     "wx4c4b54bc609bd79e",
     "wx18a2ac992306a5a4",
-    "wxc1ee10069d40b79c",
     "wx018f0c4c2a1ee727",
     "wxde40c5cf1d10c3d1"
   ],

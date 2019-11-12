@@ -4,18 +4,18 @@
   <view class="userinfo">
     <open-data class="userinfo-avatar" type="userAvatarUrl" background-size="cover"></open-data>
   </view>
-  <image bindtap="navigateToMiniProgram" id="wx18a2ac992306a5a4" data-path="pages/apps/largess/detail?id=LYFYxTFDv9E%3D" src="/images/support-min.jpeg" style="height: 80px; width: 100%" />
+  <image id="wx18a2ac992306a5a4" data-path="pages/apps/largess/detail?id=LYFYxTFDv9E%3D" src="/images/support-min.jpeg" style="height: 80px; width: 100%" />
 </view>
 
-<official-account></official-account>
+<!-- <official-account></official-account> -->
 
 <view>
-  <navigator target="miniProgram" open-type="navigate" app-id="wx4c4b54bc609bd79e" path="/pages/index/index" extra-data="" version="release" style="width:100%">
+  <!-- <navigator target="miniProgram" open-type="navigate" app-id="wx4c4b54bc609bd79e" path="/pages/index/index" extra-data="" version="release" style="width:100%"> -->
     <view class="container1">
       <image bindtap="toBilingualSpeak" style="width:100%" src="/images/topicscards-min.jpeg" mode="widthFix" style="width:95%; border-radius:25rpx;">
       </image>
     </view>
-  </navigator>
+  <!-- </navigator> -->
 </view>
 
 <view class="window">
@@ -23,18 +23,22 @@
     <image style="width:80rpx;height:80rpx" src="../../images/setting1.png"></image>
     <view style="font-size:12px">认识作者</view>
   </view> -->
+  <view class="box" bindtap="navigateTo" id="/pages/info/info">
+    <image style="width:80rpx;height:80rpx" src="../../images/setting6.png"></image>
+    <view style="font-size:12px">个人信息</view>
+  </view>
   <view class="box" bindtap="saveQRCode" id="images/monomyth.jpg">
     <image style="width:80rpx;height:80rpx" src="../../images/setting2.png"></image>
     <view style="font-size:12px">小程序码</view>
   </view>
-  <view class="box" bindtap="saveQRCode" id="images/qrcode_for_account.jpg">
+  <!-- <view class="box" bindtap="saveQRCode" id="images/qrcode_for_account.jpg">
     <image style="width:80rpx;height:80rpx" src="../../images/setting6.png"></image>
     <view style="font-size:12px">关注公众号</view>
   </view>
   <view class="box" bindtap="linkTA">
     <image style="width:80rpx;height:80rpx" src="../../images/setting7.png"></image>
     <view style="font-size:12px;">关联小程序</view>
-  </view>
+  </view> -->
   <!-- <view class="box" bindtap="navigateToMiniProgram" id="wx18a2ac992306a5a4" data-path="pages/apps/largess/detail?id=LYFYxTFDv9E%3D">
     <image style="width:80rpx;height:80rpx" src="../../images/setting3.png"></image>
     <view style="font-size:12px;">打赏作者</view>
@@ -43,8 +47,12 @@
     <image style="width:80rpx;height:80rpx" src="../../images/setting5.png"></image> 
     <view style="font-size:12px;">头马中国群</view>
   </view> -->
-  <view class="box" bindtap="navigateToMiniProgram" id="wx4c4b54bc609bd79e">
+  <!-- <view class="box" bindtap="navigateToMiniProgram" id="wx4c4b54bc609bd79e">
     <image style="width:80rpx;height:80rpx" src="../../images/setting4.png"></image>
     <view style="font-size:12px;">双语演讲</view>
   </view>
+  <view class="box" bindtap="navigateTo" id="/pages/checkin/checkin?type=jinbin">
+    <image style="width:80rpx;height:80rpx" src="../../images/setting5.png"></image>
+    <view style="font-size:12px;">更多打卡</view>
+  </view> -->
 </view>

@@ -1,37 +1,50 @@
 <!--pages/heros/heros.wxml-->
-<official-account></official-account>
 <view class="container1">
   <image src="/images/heros.jpeg" mode="widthFix" style="width:95%; border-radius:25rpx;"></image>
 </view>
 
 <view class="container1">
+
+  <view class="downText" style="margin-top: 30rpx">
+    <view>
+      欢迎加入85大区英雄之旅！
+    </view>
+    <view>Welcome to join A Hero’s Journey in D85.</view>
+  </view>
+
   <view class="window1" style="width:100%">
 
     <view class="box1">
       <navigator url="/pages/checkin/checkin?type=publicspeaking">
-        <image style="width:80rpx;height:80rpx;" src="/images/matrix_red.png"></image>
-        演讲
+        <!-- <image style="width:80rpx;height:80rpx;" src="/images/matrix_red.png"></image> -->
+        <image style="width:80rpx;height:80rpx;" src="/images/label1.png"></image>
+        <view>演讲</view>
+        <text>Speaking</text>
       </navigator>
     </view>
 
     <view class="box1">
       <navigator url="/pages/checkin/checkin?type=dtm">
-        <image style="width:80rpx;height:80rpx;" src="/images/matrix_purple.png"></image>
-        DTM
+        <!-- <image style="width:80rpx;height:80rpx;" src="/images/matrix_purple.png"></image> -->
+        <image style="width:80rpx;height:80rpx;" src="/images/label2.png"></image>
+        <view>DTM</view>
       </navigator>
     </view>
 
     <view class="box1">
       <navigator url="/pages/checkin/checkin?type=leadership">
-        <image style="width:80rpx;height:80rpx;" src="/images/matrix_DarkCyan.png"></image>
-        领导力
+        <!-- <image style="width:80rpx;height:80rpx;" src="/images/matrix_DarkCyan.png"></image> -->
+        <image style="width:80rpx;height:80rpx;" src="/images/label3.png"></image>
+        <view>领导力</view>
+        Leadership
       </navigator>
     </view>
 
     <view class="box1">
       <navigator url="/pages/checkin/checkin?type=mot">
-        <image style="width:80rpx;height:80rpx;" src="/images/matrix_orange.png"></image>
-        MOT
+        <!-- <image style="width:80rpx;height:80rpx;" src="/images/matrix_orange.png"></image> -->
+        <image style="width:80rpx;height:80rpx;" src="/images/label4.png"></image>
+        <view>MOT</view>
       </navigator>
     </view>
   </view>

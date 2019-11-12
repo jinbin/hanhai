@@ -15,6 +15,13 @@ Page({
 
   },
 
+  navigateToMiniProgram: function (options) {
+    wx.navigateToMiniProgram({
+      appId: options.currentTarget.id,
+      path: options.currentTarget.dataset.path
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
